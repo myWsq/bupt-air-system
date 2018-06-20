@@ -1,0 +1,38 @@
+{
+	"name": "nuxt-electron",
+	"version": "1.0.0",
+	"description": "Nuxt + Electron",
+	"author": "wsq <mywsq961@gmail.com>",
+	"private": true,
+	"main": "main.js",
+	"build": {
+		"appId": "",
+		"directories": {
+			"buildResources": "static"
+		}
+	},
+	"scripts": {
+		"dev": "cross-env NODE_ENV=DEV electron .",
+		"build": "nuxt build && electron-builder",
+		"dist:win": "nuxt build && electron-builder -w"
+	},
+	"dependencies": {
+		"axios": "^0.18.0",
+		"chart.js": "^2.7.2",
+		"electron-json-storage": "^4.1.0",
+		"material-design-icons-iconfont": "^3.0.3",
+		"moment": "^2.22.2",
+		"nuxt": "^1.4.0",
+		"pify": "^3.0.0",
+		"roboto-fontface": "^0.9.0",
+		"sequelize": "^4.37.10",
+		"vue-chartjs": "^3.3.1",
+		"vuetify": "^1.0.19"
+	},
+	"devDependencies": {
+		"cross-env": "^5.1.4",
+		"electron": "^2.0.2",
+		"electron-builder": "^20.8.1",
+		"electron-devtools-installer": "^2.2.3"
+	}
+}
